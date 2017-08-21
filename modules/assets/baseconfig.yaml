@@ -12,16 +12,11 @@ apache:
   user: vagrant
   group: vagrant
   vhosts:
-    - {servername: "shopware", documentroot: "/var/www/shopware", php: "70"}
-logio:
-  logio_backend_port: '28777'
-  logio_frontend_port: '28778'
-  logio_user: vagrant
-  subdomain: log
+    - {servername: "dashboard", documentroot: "/var/www/dashboard"}
 mysql:
   mysql_root_password: root
-  db_name: shopware
-  db_user: shopware
+  db_name: laravel
+  db_user: laravel
   db_password: password
 nodejs:
   nodejs_version: 6.9
